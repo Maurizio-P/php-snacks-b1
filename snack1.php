@@ -1,7 +1,13 @@
 <?php
 
-if (empty($_GET["email"] && ["name"] && ["anni"])) {
-    exit("Nessun GET inserito nell'url");
+if (empty($_GET["email"] && ["name"] && ["age"])) {
+    exit("Nessun email inserita nell'url");
+}
+if (empty($_GET["age"])) {
+    exit("Nessun age inserito nell'url");
+}
+if (empty($_GET["name"])) {
+    exit("Nessun name inserito nell'url");
 }
 
 $email = $_GET["email"];
